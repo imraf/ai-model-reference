@@ -42,4 +42,4 @@ There are two ways to contribute:
 
 ## 🙏 Credits
 
-- The initial batch of data was scraped from the project **[Can I Run This LLM?](http://www.canirunthisllm.net/)**, which (at the time of writing) is no longer available.
+- The initial batch of data was recorded from model cards on HuggingFace, measured by myself and scraped from the project **[Can I Run This LLM?](http://www.canirunthisllm.net/)**, which (at the time of writing) is no longer available.
