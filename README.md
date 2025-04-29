@@ -20,7 +20,7 @@ This repository powers the [AI Model Reference website](https://imraf.github.io/
 
 The goal is to reflect **real, tested hardware requirements** — not theoretical or estimated specs.
 
-👉 **Please ensure any data you submit is verified**, meaning it’s tested on actual hardware by monitoring VRAM usage during model operation.
+**Please ensure any data you submit is verified**, meaning it’s tested on actual hardware by monitoring VRAM usage during model operation.
 
 ---
 
@@ -32,7 +32,8 @@ There are two ways to contribute:
    - Clone this repository  
    - Add your new entries to [`data/vram.csv`](data/vram.csv)  
    - Make sure your data is validated using real hardware
-2. **Contact me** Feel free to reach out directly with new data points and suggestions. I'm active on:
+2. **Contact me:**
+   Feel free to reach with new data points and suggestions. I'm active on:
    - [MDLI group](https://www.facebook.com/groups/MDLI1/)
    - [Reddit](https://www.reddit.com/user/Oatilis/)
    - [LinkedIn](https://www.linkedin.com/in/rafael-ben-ari/) (From time to time)
@@ -41,8 +42,4 @@ There are two ways to contribute:
 
 ## 🙏 Credits
 
-The initial batch of data was scraped from the project **[Can I Run This LLM?](http://www.canirunthisllm.net/)**, which (at the time of writing) is no longer available.
-
----
-
-Thanks for contributing to a more accessible AI engineering ecosystem!
+- The initial batch of data was scraped from the project **[Can I Run This LLM?](http://www.canirunthisllm.net/)**, which (at the time of writing) is no longer available.
