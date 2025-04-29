@@ -1,5 +1,7 @@
 # 🧠 Gen AI Model Reference
 
+![Gen AI Model Reference](thumbnail.jpg)
+
 Welcome to the **Gen AI Model Reference** repository — a resource for AI Engineers looking to understand and compare real-world hardware requirements for running generative AI models.
 
 🔗 Live site: [imraf.github.io/ai-model-reference](https://imraf.github.io/ai-model-reference)
