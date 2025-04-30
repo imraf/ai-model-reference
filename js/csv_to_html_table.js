@@ -38,15 +38,22 @@ CsvToHtmlTable = {
                     var $tableBodyRow = $("<tr></tr>");
                     for (var colIdx = 0; colIdx < csvData[rowIdx].length; colIdx++) {
                         var $tableBodyRowTd = $("<td></td>");
+                        var cellData = csvData[rowIdx][colIdx];
                         var cellTemplateFunc = customTemplates[colIdx];
                         if (cellTemplateFunc) {
-                            $tableBodyRowTd.html(cellTemplateFunc(csvData[rowIdx][colIdx]));
+                            $tableBodyRowTd.html(cellTemplateFunc(cellData));
                         } else {
-                            $tableBodyRowTd.text(csvData[rowIdx][colIdx]);
+                            var vramMatch = cellData.match(/^(\d+(\.\d+)?)\s*GB$/i);
+                            if (vramMatch && vramMatch[1]) {
+                                $tableBodyRowTd.attr('data-sort', parseFloat(vramMatch[1]));
+                                $tableBodyRowTd.text(cellData);
+                            } else {
+                                $tableBodyRowTd.text(cellData); 
+                            }
                         }
                         $tableBodyRow.append($tableBodyRowTd);
-                        $tableBody.append($tableBodyRow);
                     }
+                    $tableBody.append($tableBodyRow);
                 }
                 $table.append($tableBody);
 
